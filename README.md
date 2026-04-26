@@ -72,6 +72,52 @@ Helps farmers and distributors make informed decisions.
 
 
 
+# Agri-Chain (Full Stack with Hyperledger Fabric)
+
+## Overview
+React (client) → Node.js (server) → Hyperledger Fabric (chaincode)
+
+## Prerequisites
+- Node.js 18+
+- Docker
+- Hyperledger Fabric samples (test-network)
+
+## Quick Start
+
+### 1) Start Fabric test network
+```
+cd fabric-samples/test-network
+./network.sh up createChannel -c mychannel -ca
+```
+
+### 2) Deploy chaincode
+```
+./network.sh deployCC -ccn agri-chain -ccp <PATH_TO>/blockchain/chaincode/agri-chain -ccl javascript
+```
+
+### 3) Backend
+```
+cd server
+npm install
+node server.js
+```
+
+### 4) Frontend
+```
+cd client
+npm install
+npm start
+```
+
+Frontend runs on http://localhost:3000
+Backend runs on http://localhost:3001
+
+## Notes
+- Configure `server/fabric/connection.json` and enroll `appUser` in wallet.
+
+
+
+
 
 
 
