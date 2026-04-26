@@ -1,0 +1,8 @@
+{
+  "name": "agri-chain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "fabric-contract-api": "^2.2.0"
+  }
+}
