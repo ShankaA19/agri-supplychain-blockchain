@@ -1,4 +1,4 @@
-**Agri-Chain: Blockchain-Based Agricultural Supply Chain:**    
+**Agri-Chain: Blockchain-Based Agricultural Supply Chain:**
 
 This project is a web application designed to bring transparency, efficiency, and fairness to the agricultural supply chain using Hyperledger Fabric and a React-based frontend. It connects farmers, distributors, and consumers on a single, immutable ledger.
 
@@ -14,23 +14,25 @@ Agri-Chain aims to solve common problems in the agricultural sector, such as lac
 
 **QR Code Integration:** Consumers can scan a QR code on the product to view its complete history.
 
-**Price Prediction:** A module to forecast crop prices based on historical data stored on the blockchain.
+**Price Prediction:** A module to forecast crop prices based on historical data.
 
 **Real-time Suggestions for Farmers:** Provides farmers with insights and recommendations (e.g., optimal harvest times, market demand).
 
 **Farmer Support:** A dedicated toll-free number for farmers to get assistance.
 
+
+
 **Technology Stack**
 
-**Frontend:** React.js with Tailwind CSS for a modern, responsive user interface.
 
-**Backend (Simulated):** The frontend simulates interactions with a Hyperledger Fabric blockchain. In a real-world scenario, this would involve:
 
-**Chaincode (Smart Contracts):** Written in Go, Node.js, or Java to define the business logic for creating and updating assets on the blockchain.
+Frontend: React.js with Tailwind CSS for a modern, responsive user interface.
+
+**Backend:** Node.js with Express for API handling and communication with the blockchain.
+
+**Chaincode (Smart Contracts):** Implemented using JavaScript to define the business logic for creating and updating assets on the blockchain.
 
 **Hyperledger Fabric Network:** A permissioned blockchain network consisting of peers, orderers, and certificate authorities.
-
-**API Server:** A RESTful API server (e.g., built with Node.js and Express) to allow the React frontend to communicate with the Hyperledger Fabric network.
 
 **Application Pages**
 
@@ -50,6 +52,7 @@ Manage logistics and track inventory.
 Scan a QR code or enter a product ID to view its provenance.
 See details like the farm of origin, harvest date, and transportation history.
 Generate a QR code for a selected product.
+
 **Price Prediction Page:**
 Input crop details to get an estimated market price.
 Helps farmers and distributors make informed decisions.
